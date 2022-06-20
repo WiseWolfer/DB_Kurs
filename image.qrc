@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/new/pref_image">
+        <file>images/about.png</file>
+        <file>images/accept_window_size.png</file>
+        <file>images/add_data.png</file>
+        <file>images/connect.png</file>
+        <file>images/delete_data.png</file>
+        <file>images/exit.png</file>
+        <file>images/reset_window_size.png</file>
+        <file>images/search_data.png</file>
+        <file>images/show_data.png</file>
+        <file>images/update_data.png</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>DB_Kurs_en_US.qm</file>
+        <file>DB_Kurs_ru_RU.qm</file>
+    </qresource>
+</RCC>

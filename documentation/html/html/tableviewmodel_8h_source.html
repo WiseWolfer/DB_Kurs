@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>pr-iassets: Исходный файл tableviewmodel.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">pr-iassets
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">tableviewmodel.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef TABLEVIEWMODEL_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define TABLEVIEWMODEL_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;QAbstractTableModel&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;data_from_db.h&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;QModelIndex&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_table_view_model.html">   13</a></span><span class="keyword">class </span><a class="code hl_class" href="class_table_view_model.html">TableViewModel</a>: <span class="keyword">public</span> QAbstractTableModel</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>     Q_OBJECT</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">explicit</span> <a class="code hl_function" href="class_table_view_model.html#a25e70f0eb73f80f7cc74300c8f793d9b">TableViewModel</a>(QObject *parent=<span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_table_view_model.html#a26ad36df199e039dafb18e5c088cfb87">rowCount</a>(<span class="keyword">const</span> QModelIndex &amp;parent) <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_table_view_model.html#a74b5cd7f03448dc24b6cbac5cf149b55">columnCount</a>(<span class="keyword">const</span> QModelIndex &amp;parent) <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    QVariant <a class="code hl_function" href="class_table_view_model.html#ac37ce50a9ac04c6d2df849de0d1610e8">data</a>(<span class="keyword">const</span> QModelIndex &amp;index, <span class="keywordtype">int</span> role) <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_table_view_model.html#a9ade98cd3e69edde00c82b3e2aee538d">add_data</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_data__from__db.html">Data_from_db</a> &amp;newValues);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_table_view_model.html#a7dbc44843d9709785b0c124959afb1ff">clear_data</a>();</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="class_table_view_model.html#a88a2590eb8fb48e0ff0a1ea051e19595">   33</a></span>      QList&lt;Data_from_db&gt; <a class="code hl_variable" href="class_table_view_model.html#a88a2590eb8fb48e0ff0a1ea051e19595">db</a>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="class_table_view_model.html#ad11349768573195b76464ab021955995">   35</a></span>      <span class="keywordtype">int</span> <a class="code hl_variable" href="class_table_view_model.html#ad11349768573195b76464ab021955995">rows</a>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>      <span class="comment">// QAbstractItemModel interface</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>      QVariant <a class="code hl_function" href="class_table_view_model.html#a403f1a6d94817bd109fe8c4bf3a5450e">headerData</a>(<span class="keywordtype">int</span> section, Qt::Orientation orientation, <span class="keywordtype">int</span> role) <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>      <span class="comment">// QAbstractItemModel interface</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>      <span class="keywordtype">void</span> <a class="code hl_function" href="class_table_view_model.html#a9525254825e2b6ee4a5c86e14e391b74">fetchMore</a>(<span class="keyword">const</span> QModelIndex &amp;parent) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>      <span class="keywordtype">bool</span> <a class="code hl_function" href="class_table_view_model.html#ac404b7822763d9621a001a2ed1b26a84">canFetchMore</a>(<span class="keyword">const</span> QModelIndex &amp;parent) <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>};</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#endif </span><span class="comment">// TABLEVIEWMODEL_H</span></div>
+<div class="ttc" id="aclass_data__from__db_html"><div class="ttname"><a href="class_data__from__db.html">Data_from_db</a></div><div class="ttdoc">Класс The Data_from_db class - класс для взаимодействия с данными из БД</div><div class="ttdef"><b>Definition:</b> data_from_db.h:12</div></div>
+<div class="ttc" id="aclass_table_view_model_html"><div class="ttname"><a href="class_table_view_model.html">TableViewModel</a></div><div class="ttdoc">Класс The TableViewModel class - класс модели tableview. С помощью него происходит взаимодействие с м...</div><div class="ttdef"><b>Definition:</b> tableviewmodel.h:14</div></div>
+<div class="ttc" id="aclass_table_view_model_html_a25e70f0eb73f80f7cc74300c8f793d9b"><div class="ttname"><a href="class_table_view_model.html#a25e70f0eb73f80f7cc74300c8f793d9b">TableViewModel::TableViewModel</a></div><div class="ttdeci">TableViewModel(QObject *parent=nullptr)</div><div class="ttdoc">Конструктор TableViewModel(класса модели)</div><div class="ttdef"><b>Definition:</b> tableviewmodel.cpp:11</div></div>
+<div class="ttc" id="aclass_table_view_model_html_a26ad36df199e039dafb18e5c088cfb87"><div class="ttname"><a href="class_table_view_model.html#a26ad36df199e039dafb18e5c088cfb87">TableViewModel::rowCount</a></div><div class="ttdeci">int rowCount(const QModelIndex &amp;parent) const override</div><div class="ttdoc">Метод возвращает число записей в tableview.</div><div class="ttdef"><b>Definition:</b> tableviewmodel.cpp:18</div></div>
+<div class="ttc" id="aclass_table_view_model_html_a403f1a6d94817bd109fe8c4bf3a5450e"><div class="ttname"><a href="class_table_view_model.html#a403f1a6d94817bd109fe8c4bf3a5450e">TableViewModel::headerData</a></div><div class="ttdeci">QVariant headerData(int section, Qt::Orientation orientation, int role) const override</div><div class="ttdoc">Метод задания заголовков столбцов в tableview.</div><div class="ttdef"><b>Definition:</b> tableviewmodel.cpp:103</div></div>
+<div class="ttc" id="aclass_table_view_model_html_a74b5cd7f03448dc24b6cbac5cf149b55"><div class="ttname"><a href="class_table_view_model.html#a74b5cd7f03448dc24b6cbac5cf149b55">TableViewModel::columnCount</a></div><div class="ttdeci">int columnCount(const QModelIndex &amp;parent) const override</div><div class="ttdoc">Метод возвращает число столбцов в tableview.</div><div class="ttdef"><b>Definition:</b> tableviewmodel.cpp:23</div></div>
+<div class="ttc" id="aclass_table_view_model_html_a7dbc44843d9709785b0c124959afb1ff"><div class="ttname"><a href="class_table_view_model.html#a7dbc44843d9709785b0c124959afb1ff">TableViewModel::clear_data</a></div><div class="ttdeci">void clear_data()</div><div class="ttdoc">Метод очистки QList.</div><div class="ttdef"><b>Definition:</b> tableviewmodel.cpp:94</div></div>
+<div class="ttc" id="aclass_table_view_model_html_a88a2590eb8fb48e0ff0a1ea051e19595"><div class="ttname"><a href="class_table_view_model.html#a88a2590eb8fb48e0ff0a1ea051e19595">TableViewModel::db</a></div><div class="ttdeci">QList&lt; Data_from_db &gt; db</div><div class="ttdoc">Контеннер для хранения данных из БД</div><div class="ttdef"><b>Definition:</b> tableviewmodel.h:33</div></div>
+<div class="ttc" id="aclass_table_view_model_html_a9525254825e2b6ee4a5c86e14e391b74"><div class="ttname"><a href="class_table_view_model.html#a9525254825e2b6ee4a5c86e14e391b74">TableViewModel::fetchMore</a></div><div class="ttdeci">void fetchMore(const QModelIndex &amp;parent) override</div><div class="ttdoc">Метод подгрузки данных из бд по частям</div><div class="ttdef"><b>Definition:</b> tableviewmodel.cpp:126</div></div>
+<div class="ttc" id="aclass_table_view_model_html_a9ade98cd3e69edde00c82b3e2aee538d"><div class="ttname"><a href="class_table_view_model.html#a9ade98cd3e69edde00c82b3e2aee538d">TableViewModel::add_data</a></div><div class="ttdeci">void add_data(const Data_from_db &amp;newValues)</div><div class="ttdoc">Метод добавлеия данных в QList, чтобы потом передать данные в tableview.</div><div class="ttdef"><b>Definition:</b> tableviewmodel.cpp:85</div></div>
+<div class="ttc" id="aclass_table_view_model_html_ac37ce50a9ac04c6d2df849de0d1610e8"><div class="ttname"><a href="class_table_view_model.html#ac37ce50a9ac04c6d2df849de0d1610e8">TableViewModel::data</a></div><div class="ttdeci">QVariant data(const QModelIndex &amp;index, int role) const override</div><div class="ttdoc">Метод отображения данных в tableview из QList.</div><div class="ttdef"><b>Definition:</b> tableviewmodel.cpp:28</div></div>
+<div class="ttc" id="aclass_table_view_model_html_ac404b7822763d9621a001a2ed1b26a84"><div class="ttname"><a href="class_table_view_model.html#ac404b7822763d9621a001a2ed1b26a84">TableViewModel::canFetchMore</a></div><div class="ttdeci">bool canFetchMore(const QModelIndex &amp;parent) const override</div><div class="ttdoc">Метод проверки можно ли подгрузить еще записи из БД</div><div class="ttdef"><b>Definition:</b> tableviewmodel.cpp:146</div></div>
+<div class="ttc" id="aclass_table_view_model_html_ad11349768573195b76464ab021955995"><div class="ttname"><a href="class_table_view_model.html#ad11349768573195b76464ab021955995">TableViewModel::rows</a></div><div class="ttdeci">int rows</div><div class="ttdoc">кол-во строк записей(порций) для вывода на экран</div><div class="ttdef"><b>Definition:</b> tableviewmodel.h:35</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>
